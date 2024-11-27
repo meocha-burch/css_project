@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* min-width: fit-content; */
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.box {
+    background-color: black;
+    color:white;
+    width: 25%;
+    height: 100%; 
+    font-size:20px ;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: lighter;
+    flex-wrap: wrap;
+    gap: 10px
+    
+    
+}
+
+button {
+    width: 280px;
+    height: 40px;
+    background: orange;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-color: aqua;
+    border-radius: 5px;
+
+}
+img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.box2 {
+    font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: lightgrey;
+    color: black;
+    width: 35%;
+    height: 100%;
+    font-size: 12px;    
+    line-height: 20px;
+    text-indent: 2px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-color: lightgrey;
+    border-radius: 10px;
+    color: lightgrey;
+
+}
+
+.inbox {
+    background-color: white;
+    width: 300px;
+    height: 65px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    line-height: 1.4;
+}
+
+.endbox {
+    background-color: whitesmoke;
+    width: 40%;
+    height: 100%;
+
+    margin: -1 auto;
+    font-size: 13px;
+    padding-left: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-wrap: normal;
+       
+    
+}
+
+
+textarea {
+    width: 85%;
+    height: 17vh;
+
+    margin: auto;
+    padding: 10px;
+    border: 1px solid lightgrey;
+
+}
+
+
+.lastbutton {
+    width: 100px;
+    margin-top: 10px;
+
+}
+.foot{
+    margin-top: 20px; 
+    text-indent: 5px;
+}
+
+.first {
+    text-indent: 10px;
+}
+
+pre {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-indent: 5px;
+}
+
+.title {
+    padding: 10px;
+}
+@media screen  and (max-width: 600px){
+    .container {
+        flex-direction: column;
+        /* flex: text; */
+        text-wrap: wrap;
+        max-width: 100vw;
+    }
+    .box, .box2, .endbox {
+        width: 100%;
+
+    }
+    .foot {
+        margin-bottom: 100px;
+    }
+    .endbox {
+        padding-left: 0;
+
+    }
+    
+   
+}
+/* @media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        overflow-wrap: normal; 
+    }
+  
+}*/
